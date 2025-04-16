@@ -1,0 +1,85 @@
+/* Custom styles for Heart Mate */
+
+/* Improve spacing and readability */
+body {
+    padding-bottom: 2rem;
+}
+
+/* Custom icon colors */
+.fa-heartbeat {
+    color: var(--bs-danger);
+}
+
+.fa-book-medical {
+    color: var(--bs-light);
+}
+
+/* Form styling */
+.form-control:focus, .form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Glowing effect for prediction button */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 15px var(--bs-primary);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.btn-primary:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 150%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+                              transparent 0%, 
+                              rgba(var(--bs-primary-rgb), 0.3) 50%, 
+                              transparent 100%);
+    z-index: -1;
+    transform: translateX(-100%);
+    animation: glowing 1.5s infinite;
+}
+
+@keyframes glowing {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .card:hover {
+        transform: none;
+    }
+}
