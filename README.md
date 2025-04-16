@@ -38,9 +38,5 @@ The dataset has 14 attributes:
 - templates:
 	- `Heart Disease Classifier.html`: a web page that contains a form for heart disease testing. 
 	
-
-
-
-
-
-
+![Screenshot 2025-04-16 113643](https://github.com/user-attachments/assets/aa839752-d33b-4eab-a45b-201bd3d50be9)
+![Screenshot 2025-04-16 113751](https://github.com/user-attachments/assets/e5c05e2a-fd54-4563-8131-1f5cfe38b1b4)
