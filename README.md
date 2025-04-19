@@ -34,9 +34,9 @@ The dataset has 14 attributes:
 - `data.csv`: the dataset file.
 - `Heart_Disease_Classification.ipynb`: contains the code of data exploration, preparation and modeling. 
 - `model.pkl`: the classification model. 
-- `heart_disease_app.py`: Flask API that bind between the classification model and the web page. 
+- `main.py`: Flask API that bind between the classification model and the web page. 
 - templates:
-	- `Heart Disease Classifier.html`: a web page that contains a form for heart disease testing. 
+	- `index.html`: a web page that contains a form for heart disease testing. 
 	
 ![Screenshot 2025-04-16 113643](https://github.com/user-attachments/assets/aa839752-d33b-4eab-a45b-201bd3d50be9)
 ![Screenshot 2025-04-16 113751](https://github.com/user-attachments/assets/e5c05e2a-fd54-4563-8131-1f5cfe38b1b4)
